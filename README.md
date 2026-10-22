@@ -103,4 +103,32 @@ python src/run_sql_analysis.py
 
 MBA — Data Science & AI
 
-[GitHub Profile](https://github.com/KirtiMBA0910)
+[GitHub Profile](https://github.com/KirtiMBA0910)   
+
+## 📊 Exploratory Data Analysis (EDA)
+
+### 1. Fraud vs Genuine Transactions
+![Fraud vs Genuine](images/01_fraud_vs_genuine.png)
+
+### 2. Transaction Amount by Class
+![Transaction Amount](images/02_amount_by_class.png)
+
+### 3. Transaction Time Analysis
+![Transaction Time](images/03_transaction_time.png)
+
+### 4. Correlation Heatmap
+![Correlation Heatmap](images/04_correlation_heatmap.png)
+
+### 5. Random Forest Confusion Matrix
+![Confusion Matrix](images/05_random_forest_confusion_matrix.png)
+
+### 6. ROC Curve
+![ROC Curve](images/06_roc_curve.png)
+
+### 7. Feature Importance
+![Feature Importance](images/07_feature_importance.png)
+
+## 📈 Power BI Dashboard
+
+View the interactive dashboard by downloading
+`fraud_dashboard.pbix` from this repository and opening it in Power BI Desktop.

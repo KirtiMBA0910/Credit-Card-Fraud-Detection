@@ -132,3 +132,19 @@ MBA — Data Science & AI
 
 View the interactive dashboard by downloading
 `fraud_dashboard.pbix` from this repository and opening it in Power BI Desktop.
+
+## 🤖 Model Performance Comparison
+
+| Metric | Logistic Regression | Random Forest |
+|---|---:|---:|
+| Accuracy | 97.55% | 99.95% |
+| Precision | 60.70% | 90.59% |
+| Recall | 91.84% | 78.57% |
+| F1-Score | 71.44% | 84.15% |
+| ROC-AUC | 97.21% | 95.73% |
+
+### Key Findings
+- Logistic Regression achieved higher recall in this experiment, identifying a larger proportion of fraud cases.
+- Random Forest achieved higher precision and F1-score in this experiment.
+- Accuracy alone is not sufficient for fraud detection because fraudulent transactions are rare.
+- Model selection should consider the business cost of missed fraud and false alerts.

@@ -1,0 +1,8 @@
+Metric,Value
+Total Transactions,284807.0
+Fraud Transactions,492.0
+Genuine Transactions,284315.0
+Fraud Rate (%),0.1727485630620034
+Average Transaction Amount,88.34961925093134
+Average Fraud Amount,122.21132113821139
+Average Genuine Amount,88.29102242231328

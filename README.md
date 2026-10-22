@@ -1,76 +1,106 @@
-# Credit Card Fraud Detection & Risk Analytics
 
-## Project Overview
-This project analyzes credit card transactions and builds machine-learning models to identify potentially fraudulent transactions.
+# 💳 Credit Card Fraud Detection & Risk Analytics
 
-## Business Problem
-Credit card fraud is a highly imbalanced classification problem. The goal is to detect fraudulent transactions while reducing missed fraud cases and unnecessary false alerts.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
+![SQL](https://img.shields.io/badge/SQL-SQLite-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 
-## Objectives
-- Analyze transaction and fraud patterns
-- Handle severe class imbalance
-- Build Logistic Regression and Random Forest models
-- Evaluate models using Precision, Recall, F1-score and ROC-AUC
-- Identify important predictive features
-- Prepare business metrics for Power BI
-- Perform SQL-based fraud analysis
+## 📌 Project Overview
 
-## Dataset
-The project uses the Kaggle Credit Card Fraud Detection dataset containing 284,807 transactions and 492 fraud cases.
+A machine learning and data analytics project that identifies potentially fraudulent credit card transactions using Python, SQL, and Power BI.
 
-## Technologies
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## 🎯 Business Problem
+
+Credit card fraud detection is a highly imbalanced classification problem. This project analyzes transaction patterns and compares machine learning models to help identify fraudulent activity.
+
+## 📊 Dataset
+
+- Total transactions: 284,807
+- Fraudulent transactions: 492
+- Genuine transactions: 284,315
+- Fraud rate: approximately 0.173%
+
+Dataset source: [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+Download `creditcard.csv` separately and place it in the `data/` folder. The raw dataset is not included in this repository.
+
+## 🛠️ Tools & Technologies
+
+- Python, Pandas, NumPy
+- Matplotlib, Seaborn
 - Scikit-learn
-- SQL
-- Power BI
-- GitHub
+- SQL and SQLite
+- Microsoft Power BI
+- Git and GitHub
 
-## Project Structure
-```text
-Credit-Card-Fraud-Detection/
-├── data/
-│   └── creditcard.csv
-├── src/
-│   └── fraud_detection.py
-├── sql/
-│   └── fraud_analysis.sql
-├── notebooks/
-├── dashboard/
-├── images/
-├── outputs/
-├── requirements.txt
-└── README.md
+## 🤖 Machine Learning Models
+
+- Logistic Regression
+- Random Forest
+
+### Model Performance
+
+| Metric | Logistic Regression | Random Forest |
+|---|---:|---:|
+| Accuracy | 97.55% | 99.95% |
+| Precision | 60.70% | 90.59% |
+| Recall | 91.84% | 78.57% |
+| F1-score | 71.44% | 84.15% |
+| ROC-AUC | 97.21% | 95.73% |
+
+These are the results from this project's experiment. Logistic Regression achieved higher recall, while Random Forest achieved higher precision and F1-score.
+
+## 🗄️ SQL Analysis
+
+SQL queries analyze:
+- Total transactions
+- Fraud versus genuine transactions
+- Fraud percentage
+- Average transaction amount by class
+- Maximum transaction amount by class
+
+## 📈 Power BI Dashboard
+
+The Power BI dashboard presents transaction KPIs, fraud statistics, model comparisons, and feature importance.
+
+**Dashboard file:** `fraud_dashboard.pbix`
+
+## 🚀 How to Run
+
+1. Download or clone this repository.
+2. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
 ```
 
-## How to Run in VS Code
+3. Download the Kaggle dataset and put `creditcard.csv` inside `data/`.
+4. Run the main Python script from the project root:
 
-1. Open this folder in VS Code.
-2. Open the VS Code terminal.
-3. Create a virtual environment:
-   `python -m venv venv`
-4. Activate it on Windows PowerShell:
-   `.env\Scripts\Activate.ps1`
-5. Install packages:
-   `pip install -r requirements.txt`
-6. Run:
-   `python src/fraud_detection.py`
+```bash
+python src/fraud_detection.py
+```
 
-The script creates charts in `images/` and analysis files in `outputs/`.
+5. Run the SQL analysis scripts if their files are present:
 
-## Important Metrics
-For fraud detection, accuracy alone is not sufficient because the dataset is highly imbalanced. The project focuses on:
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
-- Confusion Matrix
+```bash
+python src/sql_setup.py
+python src/run_sql_analysis.py
+```
 
-## Resume Project Title
-**Credit Card Fraud Detection & Risk Analytics**
+## 💡 Key Learnings
 
-## Resume Description
-Developed a machine-learning based credit card fraud detection project using Python and Scikit-learn; performed exploratory data analysis, addressed class imbalance, compared Logistic Regression and Random Forest models using Precision, Recall, F1-score and ROC-AUC, and prepared fraud-risk metrics for Power BI.
+- Analyzing highly imbalanced financial data
+- Comparing machine learning classification models
+- Evaluating precision, recall, F1-score, and ROC-AUC
+- Performing SQL-based fraud analysis
+- Creating business-focused Power BI visualizations
+
+## 👩‍💻 Author
+
+**Kirti Rajput**
+
+MBA — Data Science & AI
+
+[GitHub Profile](https://github.com/KirtiMBA0910)
